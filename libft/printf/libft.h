@@ -27,6 +27,12 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct		s_flag
+{
+  char				c;
+  int				(*fun)(va_list, int *);
+}					t_flag;
+
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);

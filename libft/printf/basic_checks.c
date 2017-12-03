@@ -8,15 +8,15 @@
 ** Last update Wed Nov  9 15:36:36 2016 Witrand Gaspard
 */
 
-#include "../include/lib.h"
+#include "libft.h"
 
 void	isstring(va_list ap, int *count)
 {
   char	*str;
 
   str = va_arg(ap, char *);
-  my_putstr(str);
-  (*count) += my_strlen(str);
+  ft_putstr(str);
+  (*count) += ft_strlen(str);
 }
 
 void	isint(va_list ap, int *count)
@@ -26,7 +26,7 @@ void	isint(va_list ap, int *count)
 
 void	ischar(va_list ap, int *count)
 {
-  my_putchar(va_arg(ap, int));
+  ft_putchar(va_arg(ap, int));
   ++(*count);
 }
 

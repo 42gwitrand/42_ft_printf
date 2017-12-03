@@ -8,7 +8,7 @@
 ** Last update Wed Nov 16 13:39:59 2016 Witrand Gaspard
 */
 
-#include "../include/lib.h"
+#include "libft.h"
 
 void	ispointerb16(va_list ap, int *count)
 {

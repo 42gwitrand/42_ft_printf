@@ -8,13 +8,13 @@
 ** Last update Tue Oct 11 21:05:31 2016 Witrand Gaspard
 */
 
-#include "../include/lib.h"
+#include "libft.h"
 
 int		my_putnbr_base(long nb, char *base, int *count)
 {
   unsigned int	len;
 
-  len = my_strlen(base);
+  len = ft_strlen(base);
   if (nb < 0)
     {
       my_putchar('-');
@@ -28,7 +28,7 @@ int		my_putnbr_base(long nb, char *base, int *count)
     }
   else
     {
-      my_putchar(base[nb]);
+      ft_putchar(base[nb]);
       (*count)++;
     }
   return (0);

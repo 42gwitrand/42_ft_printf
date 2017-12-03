@@ -6,7 +6,7 @@
 #    By: gwitrand <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/09 18:01:19 by gwitrand          #+#    #+#              #
-#    Updated: 2017/12/03 11:42:55 by gwitrand         ###   ########.fr        #
+#    Updated: 2017/12/03 11:47:06 by gwitrand         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -76,7 +76,15 @@ SRCS	=	ft_lstadd.c	\
 			ft_putstr_fd.c \
 			ft_strjoin.c \
 			ft_strsplit.c \
-			ft_countsplit.c
+			ft_countsplit.c \
+			printf/ft_printf.c \
+			printf/basic_checks.c \
+			printf/my_printf_checks2.c \
+			printf/my_printf_checks3.c \
+			printf/my_printf_checks4.c \
+			printf/my_put_nbr_long.c \
+			printf/my_putnbr_base.c
+
 
 OBJS	= $(patsubst %.c,%.o,$(SRCS))
 

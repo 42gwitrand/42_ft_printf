@@ -8,7 +8,7 @@
 ** Last update Wed Nov  9 15:36:22 2016 Witrand Gaspard
 */
 
-#include "../include/lib.h"
+#include "libft.h"
 
 int	my_put_nbr_long(unsigned int nb, int *count)
 {

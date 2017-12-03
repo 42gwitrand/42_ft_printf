@@ -8,7 +8,7 @@
 ** Last update Wed Nov 16 14:45:53 2016 Witrand Gaspard
 */
 
-#include "../include/lib.h"
+#include "libft.h"
 
 void	print_nonprintable(char c, int *count)
 {
