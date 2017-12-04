@@ -17,7 +17,7 @@ int		my_putnbr_base(long nb, char *base, int *count)
   len = ft_strlen(base);
   if (nb < 0)
     {
-      my_putchar('-');
+      ft_putchar('-');
       (*count)++;
       nb = -nb;
     }

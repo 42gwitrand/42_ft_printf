@@ -6,7 +6,7 @@
 #    By: gwitrand <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/09 18:01:19 by gwitrand          #+#    #+#              #
-#    Updated: 2017/12/03 11:47:06 by gwitrand         ###   ########.fr        #
+#    Updated: 2017/12/04 13:37:52 by gwitrand         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -92,7 +92,7 @@ HEADER = -I ./includes/
 
 CC = gcc -c
 
-CFLAGS = -Wall -Wextra -Werror
+# CFLAGS = -Wall -Wextra -Werror
 
 AR = ar rc
 

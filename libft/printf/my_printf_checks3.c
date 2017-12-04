@@ -17,19 +17,19 @@ void	print_nonprintable(char c, int *count)
   i = 0;
   if (c < 10)
     {
-      my_putstr("\\00");
+      ft_putstr("\\00");
       my_putnbr_base(c, "01234567", count);
       (*count) += 3;
     }
   if (c >= 10 && c < 100)
     {
-      my_putstr("\\0");
+      ft_putstr("\\0");
       my_putnbr_base(c, "01234567", count);
       (*count) += 2;
     }
   if (c >= 100)
     {
-      my_putstr("\\");
+      ft_putstr("\\");
       my_putnbr_base(c, "01234567", count);
       ++(*count);
     }
@@ -46,7 +46,7 @@ void	isstringhigh(va_list ap, int *count)
     {
       if (str2[i] > 37 && str2[i] <= 127)
 	{
-	  my_putchar(str2[i]);
+	  ft_putchar(str2[i]);
 	  ++(*count);
 	}
       else
@@ -66,7 +66,7 @@ void		isfloat(va_list ap, int *count)
   j = nb;
   my_put_nbr(j, count);
   nb = nb - j;
-  my_putchar('.');
+  ft_putchar('.');
   j = nb * 1000000;
   (*count)++;
   my_put_nbr(j, count);
@@ -74,7 +74,7 @@ void		isfloat(va_list ap, int *count)
 
 void	ispercent(va_list ap, int *count)
 {
-  my_putchar('%');
+  ft_putchar('%');
   (*count)++;
 }
 
@@ -83,6 +83,6 @@ void	success(va_list ap, int *count)
   char	*str2;
 
   str2 = "Success";
-  my_putstr(str2);
+  ft_putstr(str2);
   (*count) += 7;
 }

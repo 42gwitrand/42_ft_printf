@@ -14,19 +14,18 @@ int	my_put_nbr_long(unsigned int nb, int *count)
 {
   if (nb == 0)
     {
-      my_putchar('0');
+      ft_putchar('0');
       ++(*count);
     }
-  if (nb >= 10)
+  else if (nb >= 10)
     {
       my_put_nbr_long(nb / 10, count);
       my_put_nbr_long(nb % 10, count);
     }
-  if (nb > 0 && nb < 10)
+  else if (nb > 0 && nb < 10)
     {
-      my_putchar('0' + nb);
+      ft_putchar('0' + nb);
       ++(*count);
     }
-  else
     return (0);
 }
