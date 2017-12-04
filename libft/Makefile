@@ -83,7 +83,8 @@ SRCS	=	ft_lstadd.c	\
 			printf/my_printf_checks3.c \
 			printf/my_printf_checks4.c \
 			printf/my_put_nbr_long.c \
-			printf/my_putnbr_base.c
+			printf/my_putnbr_base.c \
+			printf/my_put_nbr.c
 
 
 OBJS	= $(patsubst %.c,%.o,$(SRCS))

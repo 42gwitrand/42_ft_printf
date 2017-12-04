@@ -22,7 +22,7 @@ void	ispointerb16caps(va_list ap, int *count)
 
 void	ispointeraddress(va_list ap, int *count)
 {
-  my_putstr("0x");
+  ft_putstr("0x");
   (*count)++;
   my_putnbr_base(va_arg(ap, unsigned long long), "0123456789abcdef", count);
 }

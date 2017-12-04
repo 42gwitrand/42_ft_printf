@@ -114,5 +114,5 @@ void				isstringhigh(va_list ap, int *count);
 void				isfloat(va_list ap, int *count);
 void				ispercent(va_list ap, int *count);
 void				success(va_list ap, int *count);
-
+int				my_put_nbr(int nb, int *count);
 #endif
