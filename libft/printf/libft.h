@@ -30,7 +30,7 @@ typedef struct		s_list
 typedef struct		s_flag
 {
   char				c;
-  int				(*fun)(va_list, int *);
+  void				(*fun)(va_list, int *);
 }					t_flag;
 
 void				*ft_memset(void *s, int c, size_t n);
@@ -96,7 +96,6 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-
 void				isstring(va_list ap, int *count);
 void				isint(va_list ap, int *count);
 void				ischar(va_list ap, int *count);
@@ -114,5 +113,6 @@ void				isstringhigh(va_list ap, int *count);
 void				isfloat(va_list ap, int *count);
 void				ispercent(va_list ap, int *count);
 void				success(va_list ap, int *count);
-int				my_put_nbr(int nb, int *count);
+int					my_put_nbr(int nb, int *count);
+
 #endif

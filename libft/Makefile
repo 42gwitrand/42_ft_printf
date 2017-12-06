@@ -6,7 +6,7 @@
 #    By: gwitrand <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/09 18:01:19 by gwitrand          #+#    #+#              #
-#    Updated: 2017/12/04 13:37:52 by gwitrand         ###   ########.fr        #
+#    Updated: 2017/12/06 10:53:01 by gwitrand         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -81,7 +81,6 @@ SRCS	=	ft_lstadd.c	\
 			printf/basic_checks.c \
 			printf/my_printf_checks2.c \
 			printf/my_printf_checks3.c \
-			printf/my_printf_checks4.c \
 			printf/my_put_nbr_long.c \
 			printf/my_putnbr_base.c \
 			printf/my_put_nbr.c
@@ -93,7 +92,7 @@ HEADER = -I ./includes/
 
 CC = gcc -c
 
-# CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 AR = ar rc
 

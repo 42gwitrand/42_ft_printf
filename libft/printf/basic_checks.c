@@ -1,36 +1,38 @@
-/*
-** my_printf_checks.c for my_printf in /home/gwitrand/Projects/Mini-project/my_printf/lib/my/printf
-**
-** Made by Witrand Gaspard
-** Login   <gwitrand@epitech.net>
-**
-** Started on  Wed Nov  9 15:36:35 2016 Witrand Gaspard
-** Last update Wed Nov  9 15:36:36 2016 Witrand Gaspard
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   basic_checks.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gwitrand <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/12/06 10:35:30 by gwitrand          #+#    #+#             */
+/*   Updated: 2017/12/06 10:35:33 by gwitrand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 void	isstring(va_list ap, int *count)
 {
-  char	*str;
+	char	*str;
 
-  str = va_arg(ap, char *);
-  ft_putstr(str);
-  (*count) += ft_strlen(str);
+	str = va_arg(ap, char *);
+	ft_putstr(str);
+	(*count) += ft_strlen(str);
 }
 
 void	isint(va_list ap, int *count)
 {
-  my_put_nbr(va_arg(ap, int), count);
+	my_put_nbr(va_arg(ap, int), count);
 }
 
 void	ischar(va_list ap, int *count)
 {
-  ft_putchar(va_arg(ap, int));
-  ++(*count);
+	ft_putchar(va_arg(ap, int));
+	++(*count);
 }
 
 void	isintpointer(va_list ap, int *count)
 {
-      my_put_nbr(va_arg(ap, char * ), count);
+	my_put_nbr((int)va_arg(ap, char *), count);
 }

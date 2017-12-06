@@ -27,6 +27,12 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct		s_flag
+{
+  char				c;
+  int				(*fun)(va_list, int *);
+}					t_flag;
+
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
@@ -90,14 +96,13 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-
 void				isstring(va_list ap, int *count);
 void				isint(va_list ap, int *count);
 void				ischar(va_list ap, int *count);
 void				isintpointer(va_list ap, int *count);
 int					my_put_nbr_long(unsigned int nb, int *count);
 int					my_putnbr_base(long nb, char *base, int *count);
-void 				ispointerb16(va_list ap, int *count);
+void				ispointerb16(va_list ap, int *count);
 void				ispointerb16caps(va_list ap, int *count);
 void				ispointeraddress(va_list ap, int *count);
 void				isintb8(va_list ap, int *count);

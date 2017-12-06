@@ -1,31 +1,33 @@
-/*
-** my_put_nbr_long.c for my_printf in /home/gwitrand/Projects/Mini-project/my_printf/lib/my/printf
-**
-** Made by Witrand Gaspard
-** Login   <gwitrand@epitech.net>
-**
-** Started on  Wed Nov  9 15:36:21 2016 Witrand Gaspard
-** Last update Wed Nov  9 15:36:22 2016 Witrand Gaspard
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   my_put_nbr_long.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gwitrand <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/12/06 10:36:20 by gwitrand          #+#    #+#             */
+/*   Updated: 2017/12/06 10:36:22 by gwitrand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 int	my_put_nbr_long(unsigned int nb, int *count)
 {
-  if (nb == 0)
-    {
-      ft_putchar('0');
-      ++(*count);
-    }
-  else if (nb >= 10)
-    {
-      my_put_nbr_long(nb / 10, count);
-      my_put_nbr_long(nb % 10, count);
-    }
-  else if (nb > 0 && nb < 10)
-    {
-      ft_putchar('0' + nb);
-      ++(*count);
-    }
-    return (0);
+	if (nb == 0)
+	{
+		ft_putchar('0');
+		++(*count);
+	}
+	else if (nb >= 10)
+	{
+		my_put_nbr_long(nb / 10, count);
+		my_put_nbr_long(nb % 10, count);
+	}
+	else if (nb > 0 && nb < 10)
+	{
+		ft_putchar('0' + nb);
+		++(*count);
+	}
+	return (0);
 }
